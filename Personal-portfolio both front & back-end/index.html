@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio Website - Suraj B R</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/ceaf3c60d6.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Aspring software Enginear</p>
+          <h1>
+            Hi, I'm <span>Suraj B R </span><br />
+            From Bengaluru, India
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!-- -----------about---------- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I am an intermediate Python programmer, Aspiring Full Stack
+              Developer and AI & ML Enthusiast. I have also learned HTML and
+              Cascading Style Sheets [CSS] and python.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>HTML</span><br />HyperText Markup Language</li>
+                <li><span>CSS</span><br />Cascading Style Sheets</li>
+                <li>
+                  <span>Java script</span><br />Used for font-end developlment
+                </li>
+                <li><span>Python</span><br />Used for back-end developlment</li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>Class 12 (2022-2023)</span><br />Grade: 90 persentage
+                </li>
+                <li>
+                  <span>class 10 (2020-2021)</span><br />Grade: 6.48 persentage
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ----------portfolio------------ -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work-1.png" />
+            <div class="layer">
+              <h3>Rock-paper-scissors game</h3>
+              <p>
+                Rock, Paper, Scissors is a simple hand game where two players
+                simultaneously form one of three shapes with their hands. Rock
+                beats scissors, scissors beat paper, and paper beats rock. The
+                game is often used for decision-making.
+              </p>
+              <a
+                href="https://rock-paper-scissors-game99.netlify.app/"
+                target="_blank"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="images/work-2.png" />
+            <div class="layer">
+              <h3>Tic Tac Toe game</h3>
+              <p>
+                Tic Tac Toe is a classic two-player game where participants
+                alternate marking Xs and Os on a 3x3 grid The objective is to
+                align three of their symbols in a row, column, or diagonal. The
+                first player to achieve this wins the game.
+              </p>
+              <a
+                href="https://tic-tac-toe-game-suraj.netlify.app/"
+                target="_blank"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="images/work-3.png" />
+            <div class="layer">
+              <h3>Portfolio website (front end)</h3>
+              <p>
+                A personal portfolio website showcases your skills, projects,
+                and experiences, creating a professional online presence that
+                helps attract potential employers, clients, or collaborators.
+              </p>
+              <a href="https://suraj-6699br.github.io/" target="_blank"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="https://github.com/suraj-6699br" target="_blank" class="btn"
+          >More projects on Github
+        </a>
+      </div>
+    </div>
+
+    <!-- ----------contact------------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fas fa-paper-plane"></i> suraj.b.r.3636@gmil.com</p>
+            <p><i class="fas fa-phone-square-alt"></i> 0123456789</p>
+            <div class="social-icons">
+              <a href="https://github.com/suraj-6699br" target="_blank"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a href="https://facebook.com/"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="https://x.com/?lang=en" target="_blank"
+                ><i class="fab fa-twitter-square"></i
+              ></a>
+              <a href="https://www.instagram.com/" target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+            <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="name" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright © suraj. Made wtih <i class="fas fa-heart"> </i> by
+          <a href="https://github.com/suraj-6699br" target="_blank">Suraj</a>
+        </p>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
